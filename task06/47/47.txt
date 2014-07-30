@@ -1,0 +1,84 @@
+task06
+
++--------------47
+
+	Question: How do I center block-elements with CSS1? 
+
+	Answer  : 
+
+		  There are three ways of centering a block: 
+	            	1.Centering with margins 
+
+				body {
+					  text-align: center;
+ 					   min-width: 500px;
+				     }
+
+				<div class="body">block area</div>
+				<span class="body">block area</span>
+
+
+
+			2.Centering with percentages 
+
+				.body {
+					  position: absolute;
+					  width: 60%;
+					  height: 30%;
+					  left: 20%;
+					  top: 35%;
+				      }
+
+				<div class="body">block area</div>
+				<span class="body">block area</span>
+
+
+			3.Centering with absolute sizes. 
+	
+				.body 
+				 {
+  					position: absolute;
+					width: 280px;
+					height: 350px;
+					left: 50%;
+					top: 50%;
+ 					margin-left: -140px;
+					margin-top: -175px;
+				 }
+
+				<div class="body">block area</div>
+				<span class="body">block area</span>
+
+
+	Question: What is deference between cell padding and cell spacing?
+	
+	Answer  : CELLSPACING is the pixel width between the individual data cells in the TABLE. 
+		  (The thickness of the lines makeing the TABLE grid). The default is zero.
+		  If the BORDER is set at 0, the CELLSPACING lines will be invisible. 
+
+		  <table border="1" cellspacing="5">
+			  <tr>
+			     <td>First Block</td>
+			     <td>Second Block</td>
+			  </tr><tr>
+			     <td>Third Block</td>
+			     <td>Forth Block</td>
+			  </tr>
+		 </table> 	
+
+		CELLPADDING is the pixel space between the cell contents and the cell border. The default for this property is also zero. 
+		This feature is not used often, but sometimes comes in handy when you have your borders turned on and you want the contents
+		to be "away" from the border a bit for easy viewing. CELLPADDING is invisible, even with the BORDER property turned on
+
+		<table border="1" cellpadding="10">
+			<tr>
+			   <td>First Block</td>
+			   <td>Second Block</td>
+			</tr><tr>
+			   <td>Third Block</td>
+			   <td>Forth Block</td>
+			</tr>
+		</table> 	
+	
+
+
